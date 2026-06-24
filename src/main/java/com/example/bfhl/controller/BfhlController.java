@@ -5,9 +5,12 @@ import com.example.bfhl.dto.BfhlResponse;
 import com.example.bfhl.service.BfhlService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.Map;
 
 @RestController
 public class BfhlController {
@@ -16,6 +19,11 @@ public class BfhlController {
 
     public BfhlController(BfhlService bfhlService) {
         this.bfhlService = bfhlService;
+    }
+
+    @GetMapping("/health")
+    public ResponseEntity<Map<String, String>> health() {
+        return ResponseEntity.ok(Map.of("status", "UP"));
     }
 
     @PostMapping("/bfhl")
