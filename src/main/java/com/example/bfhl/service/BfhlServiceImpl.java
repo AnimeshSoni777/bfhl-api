@@ -13,7 +13,7 @@ public class BfhlServiceImpl implements BfhlService {
 
     // ---- Hardcoded identity fields ----
     private static final String USER_ID = "animesh_soni_27102004";
-    private static final String EMAIL = "animeshsoni777@gmail.com";
+    private static final String EMAIL = "animesh0011.be23@chitkara.edu.in";
     private static final String ROLL_NUMBER = "2310990011";
 
     @Override

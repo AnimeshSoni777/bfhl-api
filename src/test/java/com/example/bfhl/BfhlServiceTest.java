@@ -107,7 +107,7 @@ class BfhlServiceTest {
         BfhlResponse response = service.process(request);
 
         assertEquals("animesh_soni_27102004", response.getUserId());
-        assertEquals("animeshsoni777@gmail.com", response.getEmail());
+        assertEquals("animesh0011.be23@chitkara.edu.in", response.getEmail());
         assertEquals("2310990011", response.getRollNumber());
     }
 }
